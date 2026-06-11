@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Politica de Privacidade do SSS Ticket para uso em servidores do Discord.">
+  <title>Politica de Privacidade - SSS Ticket</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fa;
+      --paper: #ffffff;
+      --text: #20242a;
+      --muted: #5f6875;
+      --line: #dfe3e8;
+      --accent: #5865f2;
+      --accent-soft: #eef0ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 32px auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 40px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 24px;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #15181d;
+    }
+
+    h2 {
+      margin-top: 34px;
+      font-size: 1.35rem;
+      color: #1b1f26;
+    }
+
+    p {
+      margin: 14px 0 0;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      background: var(--accent-soft);
+      color: #303aa8;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .notice {
+      margin-top: 20px;
+      padding: 16px;
+      border-left: 4px solid var(--accent);
+      background: #f9faff;
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      margin-top: 36px;
+      padding-top: 20px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: 100%;
+        margin: 0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        padding: 24px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Politica de Privacidade - SSS Ticket</h1>
+      <span class="updated">Ultima atualizacao: 11 de junho de 2026</span>
+      <p class="notice">
+        Esta Politica de Privacidade explica como o SSS Ticket coleta, usa,
+        armazena e protege dados ao oferecer recursos de tickets, atendimento,
+        vendas, logs e feedback em servidores do Discord.
+      </p>
+    </header>
+
+    <section>
+      <p>
+        Ao adicionar ou usar o SSS Ticket em um servidor, voce concorda com as
+        praticas descritas nesta politica. Administradores de servidores devem
+        garantir que os membros do servidor saibam que tickets podem gerar
+        registros e transcricoes quando forem fechados.
+      </p>
+    </section>
+
+    <section>
+      <h2>Dados que coletamos</h2>
+      <p>O SSS Ticket coleta apenas os dados necessarios para operar suas funcionalidades:</p>
+      <ul>
+        <li>IDs de servidores, canais, cargos e usuarios do Discord.</li>
+        <li>Configuracoes definidas por administradores, como idioma, canais de logs, categorias de tickets, cargos de suporte/vendas, cores e imagens de paineis.</li>
+        <li>Dados operacionais de tickets, como ID do canal do ticket, ID do usuario que abriu o ticket, tipo do ticket, motivo informado no formulario, idioma escolhido, status e data de criacao.</li>
+        <li>Metadados de fechamento de tickets, como usuario que fechou o ticket, data/hora de fechamento, tipo do ticket e resultado de venda quando aplicavel.</li>
+        <li>Conteudo de mensagens enviadas dentro de canais de ticket criados pelo bot, somente quando necessario para gerar transcricoes, comprovantes, anexos, logs e feedbacks relacionados ao proprio ticket.</li>
+        <li>Anexos enviados dentro de tickets, como imagens ou PDFs, quando usados para logs, comprovantes ou transcricoes do ticket.</li>
+      </ul>
+      <p>
+        O bot nao coleta senhas, tokens de usuarios, credenciais de login,
+        dados financeiros externos, informacoes de saude, documentos pessoais
+        ou qualquer dado que nao seja necessario para sua funcao de ticket.
+      </p>
+    </section>
+
+    <section>
+      <h2>Como usamos os dados</h2>
+      <p>Usamos os dados coletados para:</p>
+      <ul>
+        <li>Criar, organizar, gerenciar e fechar tickets.</li>
+        <li>Evitar que o mesmo usuario abra multiplos tickets simultaneos no mesmo servidor.</li>
+        <li>Aplicar permissoes de acesso aos canais de ticket.</li>
+        <li>Enviar notificacoes relacionadas ao ticket para usuarios e equipes de suporte.</li>
+        <li>Gerar transcricoes em PDF quando um ticket e fechado.</li>
+        <li>Enviar logs de fechamento para canais configurados por administradores do servidor.</li>
+        <li>Enviar uma copia do transcript ao dono do ticket por mensagem direta, quando possivel.</li>
+        <li>Registrar estatisticas operacionais de tickets fechados.</li>
+        <li>Permitir configuracoes por servidor, como idioma, cargos e canais.</li>
+        <li>Publicar feedbacks/vouches quando o recurso estiver ativado e o usuario fornecer feedback.</li>
+      </ul>
+      <p>
+        Nao usamos conteudo de mensagens para publicidade, perfilamento de
+        usuarios, venda de dados, treinamento de modelos de inteligencia
+        artificial ou qualquer finalidade nao relacionada ao funcionamento do
+        SSS Ticket.
+      </p>
+    </section>
+
+    <section>
+      <h2>Message Content Intent</h2>
+      <p>
+        O SSS Ticket usa a intent privilegiada Message Content apenas para
+        funcionalidades essenciais de ticket:
+      </p>
+      <ul>
+        <li>Ler mensagens enviadas em canais privados de ticket criados pelo bot.</li>
+        <li>Gerar transcricoes em PDF ao fechar tickets.</li>
+        <li>Incluir anexos e comprovantes relevantes nos logs configurados pelo servidor.</li>
+        <li>Coletar feedback textual fornecido voluntariamente pelo usuario em fluxos de vouch/feedback.</li>
+      </ul>
+      <p>
+        O bot nao monitora conversas gerais do servidor para moderacao,
+        anuncios, analise comportamental ou coleta ampla de mensagens. O uso
+        de conteudo de mensagens e limitado ao contexto dos tickets e fluxos
+        diretamente iniciados pelos usuarios ou pela equipe do servidor.
+      </p>
+    </section>
+
+    <section>
+      <h2>Dados que armazenamos</h2>
+      <p>O SSS Ticket armazena em banco de dados:</p>
+      <ul>
+        <li>Configuracoes do servidor.</li>
+        <li>Tickets abertos e seus metadados.</li>
+        <li>Logs resumidos de tickets fechados, como IDs, data/hora, responsavel pelo fechamento, motivo e tipo do ticket.</li>
+      </ul>
+      <p>
+        O conteudo completo das mensagens do ticket nao e mantido em banco de
+        dados como historico permanente pelo bot. Durante o fechamento do
+        ticket, as mensagens sao lidas para gerar o PDF de transcricao e enviar
+        o arquivo aos destinos configurados. Apos o fechamento, o canal do
+        ticket pode ser deletado conforme o fluxo do bot.
+      </p>
+      <p>
+        Os arquivos enviados pelo bot em canais de log ou por mensagem direta
+        permanecem sujeitos aos controles e politicas do Discord e as
+        permissoes do servidor onde foram enviados.
+      </p>
+    </section>
+
+    <section>
+      <h2>Compartilhamento de dados</h2>
+      <p>Nao vendemos, alugamos ou comercializamos dados de usuarios.</p>
+      <p>Dados podem ser compartilhados apenas nas seguintes situacoes:</p>
+      <ul>
+        <li>Com o proprio Discord, por meio da API e infraestrutura da plataforma.</li>
+        <li>Com administradores e equipe autorizada do servidor, por meio de canais de ticket, logs e transcricoes configurados no servidor.</li>
+        <li>Com o dono do ticket, quando uma copia do transcript e enviada por mensagem direta.</li>
+        <li>Com provedores de infraestrutura usados para hospedar o bot e seu banco de dados, exclusivamente para operar o servico.</li>
+        <li>Quando exigido por lei, regulamento ou solicitacao valida de autoridade competente.</li>
+      </ul>
+      <p>
+        Nao compartilhamos API Data com redes de anuncios, corretores de dados
+        ou servicos de monetizacao de dados.
+      </p>
+    </section>
+
+    <section>
+      <h2>Retencao e exclusao</h2>
+      <p>
+        Mantemos dados apenas pelo tempo necessario para operar o SSS Ticket,
+        manter seguranca, resolver suporte e fornecer registros administrativos
+        aos servidores.
+      </p>
+      <ul>
+        <li>Tickets abertos ficam registrados enquanto estiverem ativos.</li>
+        <li>Ao fechar um ticket, o registro operacional do ticket aberto e removido.</li>
+        <li>Logs resumidos de fechamento podem ser mantidos para estatisticas, auditoria e historico administrativo.</li>
+        <li>Configuracoes do servidor sao mantidas enquanto o bot estiver configurado ou instalado no servidor.</li>
+      </ul>
+      <p>
+        Usuarios ou administradores podem solicitar exclusao de dados
+        relacionados ao uso do SSS Ticket. Quando a exclusao for solicitada e
+        tecnicamente viavel, removeremos os dados aplicaveis, exceto quando a
+        retencao for necessaria por obrigacao legal, seguranca, prevencao de
+        abuso ou funcionamento legitimo do servico.
+      </p>
+      <p>Para solicitar exclusao, informe:</p>
+      <ul>
+        <li>ID do usuario ou servidor.</li>
+        <li>Descricao do dado que deseja remover.</li>
+        <li>Prova razoavel de que voce e o usuario afetado ou administrador autorizado do servidor.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Seguranca</h2>
+      <p>
+        Adotamos medidas razoaveis para proteger os dados processados pelo SSS
+        Ticket contra acesso, alteracao, perda, divulgacao ou uso nao
+        autorizado.
+      </p>
+      <p>Essas medidas podem incluir:</p>
+      <ul>
+        <li>Uso de variaveis de ambiente para credenciais sensiveis.</li>
+        <li>Restricao de acesso ao banco de dados e infraestrutura.</li>
+        <li>Limitacao de dados coletados ao minimo necessario.</li>
+        <li>Uso de permissoes do Discord para restringir canais de ticket e logs.</li>
+        <li>Monitoramento e correcao de falhas operacionais quando identificadas.</li>
+      </ul>
+      <p>
+        Nenhum sistema e totalmente imune a riscos. Em caso de incidente de
+        seguranca que afete dados de usuarios, tomaremos medidas razoaveis para
+        investigar, mitigar e notificar partes afetadas quando exigido por lei
+        ou pelas politicas do Discord.
+      </p>
+    </section>
+
+    <section>
+      <h2>Responsabilidades dos administradores do servidor</h2>
+      <p>Administradores que usam o SSS Ticket devem:</p>
+      <ul>
+        <li>Configurar canais de logs e cargos de suporte com cuidado.</li>
+        <li>Garantir que apenas pessoas autorizadas tenham acesso a tickets e transcricoes.</li>
+        <li>Informar membros do servidor sobre o uso do sistema de tickets e logs.</li>
+        <li>Evitar solicitar dados sensiveis desnecessarios dentro dos tickets.</li>
+        <li>Remover logs ou transcripts quando nao forem mais necessarios, conforme suas proprias obrigacoes legais e administrativas.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Menores de idade e conteudo sensivel</h2>
+      <p>
+        O SSS Ticket nao e direcionado a pessoas abaixo da idade minima exigida
+        pelo Discord ou pela lei aplicavel.
+      </p>
+      <p>
+        Usuarios e administradores nao devem usar tickets para enviar ou
+        solicitar dados sensiveis desnecessarios, como documentos pessoais,
+        informacoes financeiras, dados de saude, credenciais, senhas ou
+        conteudo proibido pelas regras do Discord.
+      </p>
+    </section>
+
+    <section>
+      <h2>Alteracoes nesta politica</h2>
+      <p>
+        Podemos atualizar esta Politica de Privacidade para refletir mudancas
+        no bot, nas leis aplicaveis ou nas politicas do Discord.
+      </p>
+      <p>
+        Quando houver alteracoes relevantes, atualizaremos a data no topo deste
+        documento. O uso continuo do SSS Ticket apos uma atualizacao significa
+        que voce aceita a versao revisada.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <p>
+        Para solicitar suporte, exclusao de dados, correcao de informacoes ou
+        esclarecer duvidas sobre privacidade, entre em contato pelo canal
+        oficial de suporte do SSS Ticket ou pelo responsavel informado na
+        pagina publica do bot.
+      </p>
+      <p>
+        Ao entrar em contato, inclua o ID do servidor, ID do usuario e uma
+        descricao clara da solicitacao para que possamos localizar os dados
+        corretamente.
+      </p>
+    </section>
+
+    <footer>
+      <p>SSS Ticket - Politica publica para usuarios e revisao do Discord.</p>
+    </footer>
+  </main>
+</body>
+</html>
