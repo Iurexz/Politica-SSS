@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Politica de Privacidade do SSS Ticket para uso em servidores do Discord.">
-  <title>Politica de Privacidade - SSS Ticket</title>
+  <meta name="description" content="Pol&iacute;ticas de Privacidade dos bots SSS Ticket e X | Buy para uso em servidores do Discord.">
+  <title>Pol&iacute;ticas de Privacidade - SSS Ticket e X | Buy</title>
   <style>
     :root {
       color-scheme: light;
@@ -15,6 +15,7 @@
       --line: #dfe3e8;
       --accent: #5865f2;
       --accent-soft: #eef0ff;
+      --accent-text: #303aa8;
     }
 
     * {
@@ -31,7 +32,7 @@
     }
 
     main {
-      width: min(920px, calc(100% - 32px));
+      width: min(980px, calc(100% - 32px));
       margin: 32px auto;
       background: var(--paper);
       border: 1px solid var(--line);
@@ -46,7 +47,8 @@
     }
 
     h1,
-    h2 {
+    h2,
+    h3 {
       line-height: 1.25;
       margin: 0;
     }
@@ -59,6 +61,12 @@
     h2 {
       margin-top: 34px;
       font-size: 1.35rem;
+      color: #1b1f26;
+    }
+
+    h3 {
+      margin-top: 22px;
+      font-size: 1.05rem;
       color: #1b1f26;
     }
 
@@ -81,7 +89,7 @@
       padding: 6px 10px;
       border-radius: 6px;
       background: var(--accent-soft);
-      color: #303aa8;
+      color: var(--accent-text);
       font-size: 0.95rem;
       font-weight: 700;
     }
@@ -92,6 +100,58 @@
       border-left: 4px solid var(--accent);
       background: #f9faff;
       color: var(--muted);
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .tab-button {
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 700;
+      padding: 9px 14px;
+    }
+
+    .tab-button[aria-selected="true"] {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-text);
+      font-size: 0.9rem;
+      font-weight: 700;
     }
 
     footer {
@@ -111,238 +171,358 @@
         border-radius: 0;
         padding: 24px 18px;
       }
+
+      .tab-button {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <h1>Politica de Privacidade - SSS Ticket</h1>
-      <span class="updated">Ultima atualizacao: 11 de junho de 2026</span>
+      <h1>Pol&iacute;ticas de Privacidade</h1>
+      <span class="updated">&Uacute;ltima atualiza&ccedil;&atilde;o: 16 de junho de 2026</span>
       <p class="notice">
-        Esta Politica de Privacidade explica como o SSS Ticket coleta, usa,
+        Esta p&aacute;gina p&uacute;blica re&uacute;ne as pol&iacute;ticas de privacidade dos bots SSS Ticket e X | Buy,
+        incluindo o uso da intent privilegiada Message Content quando necess&aacute;ria para tickets,
+        carrinhos, comprovantes, logs e suporte.
+      </p>
+      <div class="tabs" role="tablist" aria-label="Selecionar pol&iacute;tica do bot">
+        <button class="tab-button" id="tab-sss" type="button" role="tab" aria-selected="true" aria-controls="panel-sss" data-target="panel-sss">
+          SSS Ticket
+        </button>
+        <button class="tab-button" id="tab-xbuy" type="button" role="tab" aria-selected="false" aria-controls="panel-xbuy" data-target="panel-xbuy">
+          X | Buy
+        </button>
+      </div>
+    </header>
+
+    <article id="panel-sss" class="tab-panel active" role="tabpanel" aria-labelledby="tab-sss">
+      <h2>Pol&iacute;tica de Privacidade - SSS Ticket</h2>
+      <span class="updated">&Uacute;ltima atualiza&ccedil;&atilde;o: 11 de junho de 2026</span>
+      <p class="notice">
+        Esta Pol&iacute;tica de Privacidade explica como o SSS Ticket coleta, usa,
         armazena e protege dados ao oferecer recursos de tickets, atendimento,
         vendas, logs e feedback em servidores do Discord.
       </p>
-    </header>
 
-    <section>
-      <p>
-        Ao adicionar ou usar o SSS Ticket em um servidor, voce concorda com as
-        praticas descritas nesta politica. Administradores de servidores devem
-        garantir que os membros do servidor saibam que tickets podem gerar
-        registros e transcricoes quando forem fechados.
-      </p>
-    </section>
+      <section>
+        <p>
+          Ao adicionar ou usar o SSS Ticket em um servidor, voc&ecirc; concorda com as
+          pr&aacute;ticas descritas nesta pol&iacute;tica. Administradores de servidores devem
+          garantir que os membros do servidor saibam que tickets podem gerar
+          registros e transcri&ccedil;&otilde;es quando forem fechados.
+        </p>
+      </section>
 
-    <section>
-      <h2>Dados que coletamos</h2>
-      <p>O SSS Ticket coleta apenas os dados necessarios para operar suas funcionalidades:</p>
-      <ul>
-        <li>IDs de servidores, canais, cargos e usuarios do Discord.</li>
-        <li>Configuracoes definidas por administradores, como idioma, canais de logs, categorias de tickets, cargos de suporte/vendas, cores e imagens de paineis.</li>
-        <li>Dados operacionais de tickets, como ID do canal do ticket, ID do usuario que abriu o ticket, tipo do ticket, motivo informado no formulario, idioma escolhido, status e data de criacao.</li>
-        <li>Metadados de fechamento de tickets, como usuario que fechou o ticket, data/hora de fechamento, tipo do ticket e resultado de venda quando aplicavel.</li>
-        <li>Conteudo de mensagens enviadas dentro de canais de ticket criados pelo bot, somente quando necessario para gerar transcricoes, comprovantes, anexos, logs e feedbacks relacionados ao proprio ticket.</li>
-        <li>Anexos enviados dentro de tickets, como imagens ou PDFs, quando usados para logs, comprovantes ou transcricoes do ticket.</li>
-      </ul>
-      <p>
-        O bot nao coleta senhas, tokens de usuarios, credenciais de login,
-        dados financeiros externos, informacoes de saude, documentos pessoais
-        ou qualquer dado que nao seja necessario para sua funcao de ticket.
-      </p>
-    </section>
+      <section>
+        <h2>Dados que coletamos</h2>
+        <p>O SSS Ticket coleta apenas os dados necess&aacute;rios para operar suas funcionalidades:</p>
+        <ul>
+          <li>IDs de servidores, canais, cargos e usu&aacute;rios do Discord.</li>
+          <li>Configura&ccedil;&otilde;es definidas por administradores, como idioma, canais de logs, categorias de tickets, cargos de suporte/vendas, cores e imagens de pain&eacute;is.</li>
+          <li>Dados operacionais de tickets, como ID do canal do ticket, ID do usu&aacute;rio que abriu o ticket, tipo do ticket, motivo informado no formul&aacute;rio, idioma escolhido, status e data de cria&ccedil;&atilde;o.</li>
+          <li>Metadados de fechamento de tickets, como usu&aacute;rio que fechou o ticket, data/hora de fechamento, tipo do ticket e resultado de venda quando aplic&aacute;vel.</li>
+          <li>Conte&uacute;do de mensagens enviadas dentro de canais de ticket criados pelo bot, somente quando necess&aacute;rio para gerar transcri&ccedil;&otilde;es, comprovantes, anexos, logs e feedbacks relacionados ao pr&oacute;prio ticket.</li>
+          <li>Anexos enviados dentro de tickets, como imagens ou PDFs, quando usados para logs, comprovantes ou transcri&ccedil;&otilde;es do ticket.</li>
+        </ul>
+        <p>
+          O bot n&atilde;o coleta senhas, tokens de usu&aacute;rios, credenciais de login,
+          dados financeiros externos, informa&ccedil;&otilde;es de sa&uacute;de, documentos pessoais
+          ou qualquer dado que n&atilde;o seja necess&aacute;rio para sua fun&ccedil;&atilde;o de ticket.
+        </p>
+      </section>
 
-    <section>
-      <h2>Como usamos os dados</h2>
-      <p>Usamos os dados coletados para:</p>
-      <ul>
-        <li>Criar, organizar, gerenciar e fechar tickets.</li>
-        <li>Evitar que o mesmo usuario abra multiplos tickets simultaneos no mesmo servidor.</li>
-        <li>Aplicar permissoes de acesso aos canais de ticket.</li>
-        <li>Enviar notificacoes relacionadas ao ticket para usuarios e equipes de suporte.</li>
-        <li>Gerar transcricoes em PDF quando um ticket e fechado.</li>
-        <li>Enviar logs de fechamento para canais configurados por administradores do servidor.</li>
-        <li>Enviar uma copia do transcript ao dono do ticket por mensagem direta, quando possivel.</li>
-        <li>Registrar estatisticas operacionais de tickets fechados.</li>
-        <li>Permitir configuracoes por servidor, como idioma, cargos e canais.</li>
-        <li>Publicar feedbacks/vouches quando o recurso estiver ativado e o usuario fornecer feedback.</li>
-      </ul>
-      <p>
-        Nao usamos conteudo de mensagens para publicidade, perfilamento de
-        usuarios, venda de dados, treinamento de modelos de inteligencia
-        artificial ou qualquer finalidade nao relacionada ao funcionamento do
-        SSS Ticket.
-      </p>
-    </section>
+      <section>
+        <h2>Como usamos os dados</h2>
+        <p>Usamos os dados coletados para:</p>
+        <ul>
+          <li>Criar, organizar, gerenciar e fechar tickets.</li>
+          <li>Evitar que o mesmo usu&aacute;rio abra m&uacute;ltiplos tickets simult&acirc;neos no mesmo servidor.</li>
+          <li>Aplicar permiss&otilde;es de acesso aos canais de ticket.</li>
+          <li>Enviar notifica&ccedil;&otilde;es relacionadas ao ticket para usu&aacute;rios e equipes de suporte.</li>
+          <li>Gerar transcri&ccedil;&otilde;es em PDF quando um ticket &eacute; fechado.</li>
+          <li>Enviar logs de fechamento para canais configurados por administradores do servidor.</li>
+          <li>Enviar uma c&oacute;pia do transcript ao dono do ticket por mensagem direta, quando poss&iacute;vel.</li>
+          <li>Registrar estat&iacute;sticas operacionais de tickets fechados.</li>
+          <li>Permitir configura&ccedil;&otilde;es por servidor, como idioma, cargos e canais.</li>
+          <li>Publicar feedbacks/vouches quando o recurso estiver ativado e o usu&aacute;rio fornecer feedback.</li>
+        </ul>
+        <p>
+          N&atilde;o usamos conte&uacute;do de mensagens para publicidade, perfilamento de
+          usu&aacute;rios, venda de dados, treinamento de modelos de intelig&ecirc;ncia
+          artificial ou qualquer finalidade n&atilde;o relacionada ao funcionamento do
+          SSS Ticket.
+        </p>
+      </section>
 
-    <section>
-      <h2>Message Content Intent</h2>
-      <p>
-        O SSS Ticket usa a intent privilegiada Message Content apenas para
-        funcionalidades essenciais de ticket:
-      </p>
-      <ul>
-        <li>Ler mensagens enviadas em canais privados de ticket criados pelo bot.</li>
-        <li>Gerar transcricoes em PDF ao fechar tickets.</li>
-        <li>Incluir anexos e comprovantes relevantes nos logs configurados pelo servidor.</li>
-        <li>Coletar feedback textual fornecido voluntariamente pelo usuario em fluxos de vouch/feedback.</li>
-      </ul>
-      <p>
-        O bot nao monitora conversas gerais do servidor para moderacao,
-        anuncios, analise comportamental ou coleta ampla de mensagens. O uso
-        de conteudo de mensagens e limitado ao contexto dos tickets e fluxos
-        diretamente iniciados pelos usuarios ou pela equipe do servidor.
-      </p>
-    </section>
+      <section>
+        <h2>Message Content Intent</h2>
+        <p>
+          O SSS Ticket usa a intent privilegiada Message Content apenas para
+          funcionalidades essenciais de ticket:
+        </p>
+        <ul>
+          <li>Ler mensagens enviadas em canais privados de ticket criados pelo bot.</li>
+          <li>Gerar transcri&ccedil;&otilde;es em PDF ao fechar tickets.</li>
+          <li>Incluir anexos e comprovantes relevantes nos logs configurados pelo servidor.</li>
+          <li>Coletar feedback textual fornecido voluntariamente pelo usu&aacute;rio em fluxos de vouch/feedback.</li>
+        </ul>
+        <p>
+          O bot n&atilde;o monitora conversas gerais do servidor para modera&ccedil;&atilde;o,
+          an&uacute;ncios, an&aacute;lise comportamental ou coleta ampla de mensagens. O uso
+          de conte&uacute;do de mensagens &eacute; limitado ao contexto dos tickets e fluxos
+          diretamente iniciados pelos usu&aacute;rios ou pela equipe do servidor.
+        </p>
+      </section>
 
-    <section>
-      <h2>Dados que armazenamos</h2>
-      <p>O SSS Ticket armazena em banco de dados:</p>
-      <ul>
-        <li>Configuracoes do servidor.</li>
-        <li>Tickets abertos e seus metadados.</li>
-        <li>Logs resumidos de tickets fechados, como IDs, data/hora, responsavel pelo fechamento, motivo e tipo do ticket.</li>
-      </ul>
-      <p>
-        O conteudo completo das mensagens do ticket nao e mantido em banco de
-        dados como historico permanente pelo bot. Durante o fechamento do
-        ticket, as mensagens sao lidas para gerar o PDF de transcricao e enviar
-        o arquivo aos destinos configurados. Apos o fechamento, o canal do
-        ticket pode ser deletado conforme o fluxo do bot.
-      </p>
-      <p>
-        Os arquivos enviados pelo bot em canais de log ou por mensagem direta
-        permanecem sujeitos aos controles e politicas do Discord e as
-        permissoes do servidor onde foram enviados.
-      </p>
-    </section>
+      <section>
+        <h2>Dados que armazenamos</h2>
+        <p>O SSS Ticket armazena em banco de dados:</p>
+        <ul>
+          <li>Configura&ccedil;&otilde;es do servidor.</li>
+          <li>Tickets abertos e seus metadados.</li>
+          <li>Logs resumidos de tickets fechados, como IDs, data/hora, respons&aacute;vel pelo fechamento, motivo e tipo do ticket.</li>
+        </ul>
+        <p>
+          O conte&uacute;do completo das mensagens do ticket n&atilde;o &eacute; mantido em banco de
+          dados como hist&oacute;rico permanente pelo bot. Durante o fechamento do
+          ticket, as mensagens s&atilde;o lidas para gerar o PDF de transcri&ccedil;&atilde;o e enviar
+          o arquivo aos destinos configurados. Ap&oacute;s o fechamento, o canal do
+          ticket pode ser deletado conforme o fluxo do bot.
+        </p>
+      </section>
 
-    <section>
-      <h2>Compartilhamento de dados</h2>
-      <p>Nao vendemos, alugamos ou comercializamos dados de usuarios.</p>
-      <p>Dados podem ser compartilhados apenas nas seguintes situacoes:</p>
-      <ul>
-        <li>Com o proprio Discord, por meio da API e infraestrutura da plataforma.</li>
-        <li>Com administradores e equipe autorizada do servidor, por meio de canais de ticket, logs e transcricoes configurados no servidor.</li>
-        <li>Com o dono do ticket, quando uma copia do transcript e enviada por mensagem direta.</li>
-        <li>Com provedores de infraestrutura usados para hospedar o bot e seu banco de dados, exclusivamente para operar o servico.</li>
-        <li>Quando exigido por lei, regulamento ou solicitacao valida de autoridade competente.</li>
-      </ul>
-      <p>
-        Nao compartilhamos API Data com redes de anuncios, corretores de dados
-        ou servicos de monetizacao de dados.
-      </p>
-    </section>
+      <section>
+        <h2>Compartilhamento de dados</h2>
+        <p>N&atilde;o vendemos, alugamos ou comercializamos dados de usu&aacute;rios.</p>
+        <p>Dados podem ser compartilhados apenas nas seguintes situa&ccedil;&otilde;es:</p>
+        <ul>
+          <li>Com o pr&oacute;prio Discord, por meio da API e infraestrutura da plataforma.</li>
+          <li>Com administradores e equipe autorizada do servidor, por meio de canais de ticket, logs e transcri&ccedil;&otilde;es configurados no servidor.</li>
+          <li>Com o dono do ticket, quando uma c&oacute;pia do transcript &eacute; enviada por mensagem direta.</li>
+          <li>Com provedores de infraestrutura usados para hospedar o bot e seu banco de dados, exclusivamente para operar o servi&ccedil;o.</li>
+          <li>Quando exigido por lei, regulamento ou solicita&ccedil;&atilde;o v&aacute;lida de autoridade competente.</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Retencao e exclusao</h2>
-      <p>
-        Mantemos dados apenas pelo tempo necessario para operar o SSS Ticket,
-        manter seguranca, resolver suporte e fornecer registros administrativos
-        aos servidores.
-      </p>
-      <ul>
-        <li>Tickets abertos ficam registrados enquanto estiverem ativos.</li>
-        <li>Ao fechar um ticket, o registro operacional do ticket aberto e removido.</li>
-        <li>Logs resumidos de fechamento podem ser mantidos para estatisticas, auditoria e historico administrativo.</li>
-        <li>Configuracoes do servidor sao mantidas enquanto o bot estiver configurado ou instalado no servidor.</li>
-      </ul>
-      <p>
-        Usuarios ou administradores podem solicitar exclusao de dados
-        relacionados ao uso do SSS Ticket. Quando a exclusao for solicitada e
-        tecnicamente viavel, removeremos os dados aplicaveis, exceto quando a
-        retencao for necessaria por obrigacao legal, seguranca, prevencao de
-        abuso ou funcionamento legitimo do servico.
-      </p>
-      <p>Para solicitar exclusao, informe:</p>
-      <ul>
-        <li>ID do usuario ou servidor.</li>
-        <li>Descricao do dado que deseja remover.</li>
-        <li>Prova razoavel de que voce e o usuario afetado ou administrador autorizado do servidor.</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Reten&ccedil;&atilde;o, exclus&atilde;o e seguran&ccedil;a</h2>
+        <p>
+          Mantemos dados apenas pelo tempo necess&aacute;rio para operar o SSS Ticket,
+          manter seguran&ccedil;a, resolver suporte e fornecer registros administrativos
+          aos servidores.
+        </p>
+        <ul>
+          <li>Tickets abertos ficam registrados enquanto estiverem ativos.</li>
+          <li>Ao fechar um ticket, o registro operacional do ticket aberto &eacute; removido.</li>
+          <li>Logs resumidos de fechamento podem ser mantidos para estat&iacute;sticas, auditoria e hist&oacute;rico administrativo.</li>
+          <li>Configura&ccedil;&otilde;es do servidor s&atilde;o mantidas enquanto o bot estiver configurado ou instalado no servidor.</li>
+        </ul>
+        <p>
+          Usu&aacute;rios ou administradores podem solicitar exclus&atilde;o de dados quando
+          tecnicamente vi&aacute;vel, exceto quando a reten&ccedil;&atilde;o for necess&aacute;ria por
+          obriga&ccedil;&atilde;o legal, seguran&ccedil;a, preven&ccedil;&atilde;o de abuso ou funcionamento
+          leg&iacute;timo do servi&ccedil;o.
+        </p>
+      </section>
 
-    <section>
-      <h2>Seguranca</h2>
-      <p>
-        Adotamos medidas razoaveis para proteger os dados processados pelo SSS
-        Ticket contra acesso, alteracao, perda, divulgacao ou uso nao
-        autorizado.
-      </p>
-      <p>Essas medidas podem incluir:</p>
-      <ul>
-        <li>Uso de variaveis de ambiente para credenciais sensiveis.</li>
-        <li>Restricao de acesso ao banco de dados e infraestrutura.</li>
-        <li>Limitacao de dados coletados ao minimo necessario.</li>
-        <li>Uso de permissoes do Discord para restringir canais de ticket e logs.</li>
-        <li>Monitoramento e correcao de falhas operacionais quando identificadas.</li>
-      </ul>
-      <p>
-        Nenhum sistema e totalmente imune a riscos. Em caso de incidente de
-        seguranca que afete dados de usuarios, tomaremos medidas razoaveis para
-        investigar, mitigar e notificar partes afetadas quando exigido por lei
-        ou pelas politicas do Discord.
-      </p>
-    </section>
+      <section>
+        <h2>Responsabilidades e contato</h2>
+        <p>
+          Administradores devem configurar canais de logs e cargos de suporte
+          com cuidado, garantindo que apenas pessoas autorizadas tenham acesso a
+          tickets e transcri&ccedil;&otilde;es.
+        </p>
+        <p>
+          Para solicitar suporte, exclus&atilde;o de dados, corre&ccedil;&atilde;o de informa&ccedil;&otilde;es ou
+          esclarecer d&uacute;vidas sobre privacidade, entre em contato pelo canal
+          oficial de suporte do SSS Ticket ou pelo respons&aacute;vel informado na
+          p&aacute;gina p&uacute;blica do bot.
+        </p>
+      </section>
+    </article>
 
-    <section>
-      <h2>Responsabilidades dos administradores do servidor</h2>
-      <p>Administradores que usam o SSS Ticket devem:</p>
-      <ul>
-        <li>Configurar canais de logs e cargos de suporte com cuidado.</li>
-        <li>Garantir que apenas pessoas autorizadas tenham acesso a tickets e transcricoes.</li>
-        <li>Informar membros do servidor sobre o uso do sistema de tickets e logs.</li>
-        <li>Evitar solicitar dados sensiveis desnecessarios dentro dos tickets.</li>
-        <li>Remover logs ou transcripts quando nao forem mais necessarios, conforme suas proprias obrigacoes legais e administrativas.</li>
-      </ul>
-    </section>
+    <article id="panel-xbuy" class="tab-panel" role="tabpanel" aria-labelledby="tab-xbuy">
+      <h2>Pol&iacute;tica de Privacidade - X | Buy</h2>
+      <span class="updated">&Uacute;ltima atualiza&ccedil;&atilde;o: 16 de junho de 2026</span>
+      <p class="notice">
+        Esta pol&iacute;tica explica como o bot Discord X | Buy coleta, usa, armazena
+        e protege dados durante fluxos de venda, carrinho, ticket, suporte,
+        entrega de chaves, vouch, logs e gest&atilde;o de parceiros.
+      </p>
 
-    <section>
-      <h2>Menores de idade e conteudo sensivel</h2>
-      <p>
-        O SSS Ticket nao e direcionado a pessoas abaixo da idade minima exigida
-        pelo Discord ou pela lei aplicavel.
-      </p>
-      <p>
-        Usuarios e administradores nao devem usar tickets para enviar ou
-        solicitar dados sensiveis desnecessarios, como documentos pessoais,
-        informacoes financeiras, dados de saude, credenciais, senhas ou
-        conteudo proibido pelas regras do Discord.
-      </p>
-    </section>
+      <section>
+        <h2>Dados que o bot pode processar</h2>
+        <ul>
+          <li>ID do servidor Discord.</li>
+          <li>ID do usu&aacute;rio, nome de usu&aacute;rio ou men&ccedil;&atilde;o Discord.</li>
+          <li>ID e nome de canais criados pelo bot.</li>
+          <li>Idioma escolhido pelo usu&aacute;rio.</li>
+          <li>Mensagens enviadas em tickets/carrinhos criados pelo bot.</li>
+          <li>Anexos enviados em tickets/carrinhos, incluindo comprovantes.</li>
+          <li>PDFs de transcript de atendimento.</li>
+          <li>Plano/produto comprado, status de pagamento, provedor de pagamento e cupom aplicado.</li>
+          <li>Key entregue ao comprador e logs de entrega.</li>
+          <li>Vouch/feedback enviado pelo comprador.</li>
+          <li>Logs de fechamento de ticket/carrinho.</li>
+          <li>Comprovantes/anexos relacionados &agrave; baixa de comiss&atilde;o de parceiros.</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Alteracoes nesta politica</h2>
-      <p>
-        Podemos atualizar esta Politica de Privacidade para refletir mudancas
-        no bot, nas leis aplicaveis ou nas politicas do Discord.
-      </p>
-      <p>
-        Quando houver alteracoes relevantes, atualizaremos a data no topo deste
-        documento. O uso continuo do SSS Ticket apos uma atualizacao significa
-        que voce aceita a versao revisada.
-      </p>
-    </section>
+      <section>
+        <h2>Finalidade do uso dos dados</h2>
+        <ul>
+          <li>Criar e gerenciar tickets e carrinhos privados.</li>
+          <li>Processar compras, pagamentos, cupons, planos e estoque.</li>
+          <li>Confirmar pagamento e entregar chaves compradas.</li>
+          <li>Enviar key por DM ou, se a DM estiver fechada, no carrinho.</li>
+          <li>Registrar logs de entrega para suporte p&oacute;s-compra.</li>
+          <li>Gerar PDF da conversa ao fechar ticket/carrinho.</li>
+          <li>Salvar backup de comprovantes.</li>
+          <li>Solicitar e registrar vouch/feedback.</li>
+          <li>Processar comprovantes de parceiros/comiss&otilde;es.</li>
+          <li>Resolver disputas, falhas de entrega, problemas de pagamento e solicita&ccedil;&otilde;es de suporte.</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Contato</h2>
-      <p>
-        Para solicitar suporte, exclusao de dados, correcao de informacoes ou
-        esclarecer duvidas sobre privacidade, entre em contato pelo canal
-        oficial de suporte do SSS Ticket ou pelo responsavel informado na
-        pagina publica do bot.
-      </p>
-      <p>
-        Ao entrar em contato, inclua o ID do servidor, ID do usuario e uma
-        descricao clara da solicitacao para que possamos localizar os dados
-        corretamente.
-      </p>
-    </section>
+      <section>
+        <h2>Message Content Intent</h2>
+        <p>
+          O X | Buy usa a intent privilegiada Message Content porque alguns
+          recursos essenciais dependem de mensagens e anexos enviados em canais
+          privados de ticket/carrinho criados pelo bot.
+        </p>
+        <ul>
+          <li>Gerar transcript em PDF de tickets/carrinhos.</li>
+          <li>Registrar mensagens relevantes do atendimento.</li>
+          <li>Identificar anexos e comprovantes enviados pelo comprador.</li>
+          <li>Fazer backup de comprovantes de pagamento no canal configurado.</li>
+          <li>Processar comprovantes/anexos de baixa de comiss&atilde;o de parceiros.</li>
+          <li>Preservar evid&ecirc;ncias de compra para suporte, disputa, reenvio de key ou confer&ecirc;ncias manuais.</li>
+        </ul>
+        <p>
+          O bot n&atilde;o usa conte&uacute;do de mensagens para publicidade, perfilamento,
+          monitoramento geral de conversas p&uacute;blicas, venda de dados ou
+          treinamento de IA.
+        </p>
+        <div class="tag-list" aria-label="Usos n&atilde;o realizados">
+          <span class="tag">Sem publicidade</span>
+          <span class="tag">Sem perfilamento</span>
+          <span class="tag">Sem venda de dados</span>
+          <span class="tag">Sem monitoramento geral</span>
+          <span class="tag">Sem treinamento de IA</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Armazenamento</h2>
+        <p>Os dados podem ser armazenados:</p>
+        <ul>
+          <li>No banco de dados configurado para o bot.</li>
+          <li>Em canais de log configurados no servidor.</li>
+          <li>Em PDFs/anexos enviados para canais restritos.</li>
+          <li>Em registros de pagamento, carrinho, ticket, estoque, cupom, vouch e parceiro.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Reten&ccedil;&atilde;o</h2>
+        <p>
+          Os dados s&atilde;o mantidos pelo tempo necess&aacute;rio para opera&ccedil;&atilde;o da loja,
+          suporte ao cliente, auditoria de pagamento, recupera&ccedil;&atilde;o de key,
+          resolu&ccedil;&atilde;o de disputa e obriga&ccedil;&otilde;es internas do servidor.
+        </p>
+        <p>
+          Administradores do servidor devem revisar e remover logs antigos
+          quando eles n&atilde;o forem mais necess&aacute;rios.
+        </p>
+      </section>
+
+      <section>
+        <h2>Compartilhamento</h2>
+        <p>
+          Os dados n&atilde;o s&atilde;o vendidos, alugados ou compartilhados para publicidade.
+        </p>
+        <p>
+          O acesso aos dados deve ficar restrito ao owner do bot e &agrave; equipe
+          autorizada no servidor.
+        </p>
+        <p>
+          Dados de pagamento podem ser processados por provedores externos usados
+          pelo bot, como Stripe e Mystic Pay, somente para cria&ccedil;&atilde;o, consulta e
+          confirma&ccedil;&atilde;o de pagamentos.
+        </p>
+      </section>
+
+      <section>
+        <h2>Seguran&ccedil;a</h2>
+        <ul>
+          <li>Comandos administrativos s&atilde;o limitados ao owner global, owner configurado ou equipe autorizada.</li>
+          <li>Tickets e carrinhos s&atilde;o criados com permiss&otilde;es restritas.</li>
+          <li>Canais de log, comprovantes e vouch devem ser acess&iacute;veis apenas pela equipe autorizada.</li>
+          <li>Keys, comprovantes e PDFs n&atilde;o devem ser publicados em canais p&uacute;blicos.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Direitos e solicita&ccedil;&otilde;es</h2>
+        <p>
+          Usu&aacute;rios podem solicitar suporte ou remo&ccedil;&atilde;o de dados relacionados a
+          uma compra entrando em contato com a equipe respons&aacute;vel pelo servidor
+          onde o bot est&aacute; instalado.
+        </p>
+        <p>
+          A remo&ccedil;&atilde;o pode ser limitada quando os dados forem necess&aacute;rios para
+          auditoria de pagamento, resolu&ccedil;&atilde;o de disputa, preven&ccedil;&atilde;o de fraude ou
+          recupera&ccedil;&atilde;o de entrega.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contato</h2>
+        <p>
+          Para d&uacute;vidas sobre esta pol&iacute;tica, entre em contato com o owner ou
+          equipe respons&aacute;vel pelo servidor onde o X | Buy est&aacute; instalado.
+        </p>
+      </section>
+    </article>
 
     <footer>
-      <p>SSS Ticket - Politica publica para usuarios e revisao do Discord.</p>
+      <p>Pol&iacute;ticas p&uacute;blicas para usu&aacute;rios e revis&atilde;o do Discord.</p>
     </footer>
   </main>
+
+  <script>
+    const buttons = Array.from(document.querySelectorAll(".tab-button"));
+    const panels = Array.from(document.querySelectorAll(".tab-panel"));
+
+    function activateTab(targetId) {
+      for (const button of buttons) {
+        const isActive = button.dataset.target === targetId;
+        button.setAttribute("aria-selected", String(isActive));
+      }
+
+      for (const panel of panels) {
+        panel.classList.toggle("active", panel.id === targetId);
+      }
+
+      const hash = targetId === "panel-xbuy" ? "#x-buy" : "#sss-ticket";
+      if (window.location.hash !== hash) {
+        history.replaceState(null, "", hash);
+      }
+    }
+
+    for (const button of buttons) {
+      button.addEventListener("click", () => activateTab(button.dataset.target));
+    }
+
+    if (window.location.hash === "#x-buy") {
+      activateTab("panel-xbuy");
+    } else {
+      activateTab("panel-sss");
+    }
+  </script>
 </body>
 </html>
